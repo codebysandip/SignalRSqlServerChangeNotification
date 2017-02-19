@@ -6,36 +6,28 @@ Change connection string in web.config with your own connection string
     <add name="SqlServerConnection" connectionString="Data Source=SANDIP;Initial Catalog=DemoCRM;Integrated Security=True" providerName="System.Data.SqlClient" />
 </connectionStrings>
 ```
-Run Following script in Sql Server
+
 
 ##Create Database
+Run Following script in Sql Server
+```
 Create Database DemoCRM
-
 Go
 
 Use DemoCRM
-
 Go
 
 CREATE TABLE DevTest(
-
 	[ID] [int] IDENTITY(1,1) NOT NULL,
-
 	[CampaignName] [varchar](255) NULL,
-
 	[Date] [datetime] NULL,
-
 	[Clicks] [int] NULL,
-
 	[Conversions] [int] NULL,
-
 	[Impressions] [int] NULL,
-
 	[AffiliateName] [varchar](255) NULL
-
 ) ON [PRIMARY]
-
 GO
+```
 
 Open project in Visual Studio 2015
 
