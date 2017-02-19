@@ -22,6 +22,10 @@ namespace DemoCRM.Data.Concrete
             }
         }
 
+        /// <summary>
+        /// Get Count of Total Rows of Campaign
+        /// </summary>
+        /// <returns></returns>
         public async Task<int> TotalRecords()
         {
             using (CRMDbContext context = new CRMDbContext())
@@ -29,6 +33,12 @@ namespace DemoCRM.Data.Concrete
                 return await context.Campaigns.CountAsync();
             }
         }
+
+        /// <summary>
+        /// Get Campaign Detail
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
         public async Task<Campaign> Get(int ID)
         {
             using (CRMDbContext context = new CRMDbContext())

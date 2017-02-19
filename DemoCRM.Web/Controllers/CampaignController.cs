@@ -22,26 +22,6 @@ namespace DemoCRM.Web.Controllers
             return View();
         }
 
-        ///// <summary>
-        ///// Get all compaign
-        ///// </summary>
-        ///// <returns></returns>
-        //public async Task<ActionResult> Campaigns()
-        //{
-        //    try
-        //    {
-        //        int skip = int.Parse(Request.QueryString["start"]);
-        //        int take = int.Parse(Request.QueryString["length"]);
-        //        return Json(new DataTableRespnse<List<Campaign>> { data = await _repo.Get(take, skip), draw = int.Parse(Request.QueryString["draw"]), recordsTotal = 15, recordsFiltered = 15 }, JsonRequestBehavior.AllowGet);
-
-        //    }
-        //    catch (System.Exception ex)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
        /// <summary>
        /// Get Campaign details
        /// </summary>

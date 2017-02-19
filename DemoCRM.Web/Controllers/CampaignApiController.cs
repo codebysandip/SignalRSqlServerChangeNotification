@@ -8,6 +8,9 @@ using System.Web.Http;
 
 namespace DemoCRM.Web.Controllers
 {
+    /// <summary>
+    /// Endpoint for Campaign
+    /// </summary>
     public class CampaignApiController : ApiController
     {
         private ICampaignRepositry _repo;
@@ -15,6 +18,7 @@ namespace DemoCRM.Web.Controllers
         {
             _repo = repo;
         }
+
         /// <summary>
         /// Get all compaign
         /// </summary>
