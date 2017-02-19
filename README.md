@@ -1,11 +1,11 @@
 # SignalRSqlServerChnageNotification
 ##Configure connection string
 Change connection string in web.config with your own connection string
-***
+```
 <connectionStrings>  
     <add name="SqlServerConnection" connectionString="Data Source=SANDIP;Initial Catalog=DemoCRM;Integrated Security=True" providerName="System.Data.SqlClient" />
 </connectionStrings>
-***
+```
 Run Following script in Sql Server
 
 ##Create Database
