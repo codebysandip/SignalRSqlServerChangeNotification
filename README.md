@@ -28,9 +28,7 @@ CREATE TABLE DevTest(
 ) ON [PRIMARY]
 GO
 ```
-
-Open project in Visual Studio 2015
-
-Restore nuget packages by right click on solution and click on Restore Nuget Packages
-
-Run the project and Enjoy!
+##Project Setup in Visual Studio
+* Open project in Visual Studio 2015
+* Restore nuget packages by right click on solution and click on Restore Nuget Packages
+* Run the project and Enjoy!
