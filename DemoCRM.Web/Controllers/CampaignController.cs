@@ -65,17 +65,26 @@ namespace DemoCRM.Web.Controllers
         [HttpPost]
         public async Task<ActionResult> Create(Campaign model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                if (await _repo.Add(model))
+                //Modal Validation should be global in real time application
+                if (ModelState.IsValid)
                 {
-                    return RedirectToAction("Index");
+                    if (await _repo.Add(model))
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    ModelState.AddModelError("", "Data didn't saved. Please try again after some time");
+                    return View(model);
                 }
-                ModelState.AddModelError("", "Data didn't saved. Please try again after some time");
+                ModelState.AddModelError("", "Please fill all required data");
                 return View(model);
+
             }
-            ModelState.AddModelError("", "Please fill all required data");
-            return View(model);
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
         }
 
         /// <summary>
