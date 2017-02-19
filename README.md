@@ -1,4 +1,4 @@
-# SignalRSqlServerChnageNotification
+# SignalRSqlServerChangeNotification
 ##Configure connection string
 Change connection string in web.config with your own connection string
 ```
