@@ -1,0 +1,7 @@
+packages/
+/DemoCRM.Web/bin
+/DemoCRM.Web/obj
+/DemoCRM.Models/bin
+/DemoCRM.Models/obj
+/DemoCRM.Data/bin
+/DemoCRM.Data/obj
