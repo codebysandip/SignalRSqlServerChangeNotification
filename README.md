@@ -3,6 +3,7 @@ Sql Server Change notifications in ASP.NET MVC using SignalR
 Change connection string in web.config with your own connection string
 Run Following script in Sql Server
 
+##Create Database
 Create Database DemoCRM
 
 Go
