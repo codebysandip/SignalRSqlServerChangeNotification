@@ -8,7 +8,7 @@ Go
 Use DemoCRM
 Go
 
-CREATE TABLE [dbo].[DevTest](
+CREATE TABLE DevTest(
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[CampaignName] [varchar](255) NULL,
 	[Date] [datetime] NULL,
